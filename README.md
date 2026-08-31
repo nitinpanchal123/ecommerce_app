@@ -2,24 +2,18 @@
 
 A modern Flutter e-commerce application built with Clean Architecture and Riverpod, featuring offline-first capabilities and a sleek UI.
 
-## 🏗️ Architecture Explanation
+##  Architecture Explanation
 
-The project follows a simplified **Clean Architecture** pattern, designed to be maintainable and scalable while remaining beginner-friendly. It is organized into features, each containing three layers:
+The project follows a simplified **Clean Architecture** pattern, each containing three layers:
 
-1.  **Domain Layer**: The core business logic. Contains **Entities** (simple Dart classes representing data) and **Repository Interfaces** (abstract classes defining what the app can do).
-2.  **Data Layer**: Handles data retrieval. Contains **Models** (extensions of entities with JSON mapping), **Data Sources** (Remote via Dio and Local via SQLite), and **Repository Implementations** that coordinate between the network and the cache.
-3.  **Presentation Layer**: The UI and State Management. Contains **Pages** (screens), **Widgets** (reusable UI components), and **Providers** (Riverpod logic).
+1.  **Domain Layer**
+2.  **Data Layer**
+3.  **Presentation Layer**: The UI and State Management. 
 
-## ⚡ State Management Approach
+##  State Management Approach
 
-This app utilizes **Riverpod** for state management. It provides a robust, compile-safe way to manage data flow:
 
-*   **Notifier & NotifierProvider**: Used for complex states like product pagination and theme switching. It allows us to centralize business logic (like the 3-retry mechanism) away from the UI.
-*   **FutureProvider**: Used for asynchronous data fetching, such as loading the wishlist or performing a search.
-*   **StateProvider**: Used for simple state pieces like the current search query.
-*   **Provider Overrides**: Used in `main.dart` to initialize and inject global dependencies like `SharedPreferences` and the SQLite `Database` instance.
-
-## 💾 Offline Storage Approach
+## Offline Storage Approach
 
 The app implements an **Offline-First** strategy using **sqflite** (SQLite):
 

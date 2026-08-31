@@ -50,7 +50,7 @@ Follow these steps to get the project running on your local machine:
 
 ---
 
-### 🛠️ Key Features Summary
+###  Key Features Summary
 *   **Auth**: Dummy login with persistence via `SharedPreferences`.
 *   **Network**: `Dio` integrated with a 10s timeout and a manual **3-retry mechanism** with SnackBar feedback.
 *   **UI/UX**: Hero animations for product images, themed loading states, and specialized "No Internet" and "Empty Wishlist" screens.

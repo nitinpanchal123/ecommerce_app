@@ -11,7 +11,7 @@ The project follows a simplified **Clean Architecture** pattern, each containing
 3.  **Presentation Layer**: The UI and State Management. 
 
 ##  State Management Approach
-
+I use Riverpod for state management. 
 
 ## Offline Storage Approach
 
@@ -22,7 +22,7 @@ The app implements an **Offline-First** strategy using **sqflite** (SQLite):
 *   **Offline Search**: The search functionality is specifically designed to query the local database, ensuring ultra-fast results regardless of connectivity.
 *   **Persistent Wishlist**: User "likes" are stored permanently in the database, meaning your favorites are remembered across app restarts and even without an internet connection.
 
-## 🚀 Steps to Run the Application
+##  Steps to Run the Application
 
 Follow these steps to get the project running on your local machine:
 
